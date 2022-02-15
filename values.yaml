@@ -1,0 +1,15 @@
+# Default values for cluster-chart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+baseDomain: "redhat.com"
+imageSetRefName: "img4.9.19-x86-64-appsub"
+controlPlaneAgents: 3
+pullSecretB64: "MISSING_PULL_SECRET_IN_BASE64"
+
+platform:
+  agentBareMetal:
+    agentSelector:
+      matchLabels:
+        foo: bar
+

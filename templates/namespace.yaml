@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  # ACM requires cluster to be in the namespace of its name
+  name: {{ .Release.Name }}
+spec:
+  finalizers:
+  - kubernetes
